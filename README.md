@@ -13,7 +13,7 @@ y copiarla en la carpeta `./docker/nginx/conf/`
 - default-wordpress.conf
 - default-prestashop.conf
 
-Generar certidicados autofirmados ejecutando el script generate-selfsigned-certificate.sh
+Generar certidicados autofirmados ejecutando el script ./generate-selfsigned-certificate.sh
 
 Clonar el proyecto en el subdirectorio `./public_html/`
 
