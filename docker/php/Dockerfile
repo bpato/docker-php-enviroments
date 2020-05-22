@@ -1,4 +1,4 @@
-ARG PHP_VERSION="7.3"
+ARG PHP_VERSION="5.6"
 FROM php:${PHP_VERSION:+${PHP_VERSION}-}fpm
 LABEL maintainer="Brais Pato <braispato@hotmail.com>"
 
@@ -44,7 +44,7 @@ RUN docker-php-ext-install intl \
     && docker-php-source delete
 
 # Habilitamos xdebug
-RUN pecl install -f xdebug \
+RUN pecl install -f xdebug-2.5.0 \
     && docker-php-ext-enable xdebug
 
 EXPOSE 9000
