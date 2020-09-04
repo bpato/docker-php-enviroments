@@ -19,6 +19,7 @@ services:
                 PHP_VERSION: ${PHP_VERSION}
         extra_hosts:
             - 'host.docker.internal:${HOST_DOCKER_INTERNAL}'
+            - 'api.wordpress.org:198.143.164.251'
         volumes:
         - './public_html/${PROJECT_FOLDER}:/var/www/html/'
         - './docker/php/conf/:/usr/local/etc/php/conf.d/'
